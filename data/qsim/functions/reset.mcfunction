@@ -1,0 +1,1 @@
+scoreboard players reset x_target qubits
