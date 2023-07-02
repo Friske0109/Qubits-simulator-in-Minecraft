@@ -3,15 +3,19 @@ scoreboard players operation x_idx0 qubits = x_upper_loop qubits
 scoreboard players operation x_idx0 qubits *= x_upper_mul qubits
 scoreboard players operation x_idx0 qubits += x_lower_loop qubits
 
+#x_idx1を設定
 scoreboard players operation x_idx1 qubits = x_idx0 qubits
 scoreboard players operation x_idx1 qubits += x_lower qubits
 
-scoreboard players operation x_setbit_x qubits = x_idx0 qubits
-scoreboard players operation x_setbit_y qubits = x_idx1 qubits
-scoreboard players operation x_setbit qubits = max_value qubits
-function qsim:operators/x/x_setbit
+#setbit = 1
+scoreboard players operation setbit qubits = max_value qubits
 
-scoreboard players operation x_setbit_x qubits = x_idx1 qubits
-scoreboard players operation x_setbit_y qubits = x_idx0 qubits
-scoreboard players operation x_setbit qubits = max_value qubits
-function qsim:operators/x/x_setbit
+#[idx0, idx1] = 1
+scoreboard players operation setbit_x qubits = x_idx0 qubits
+scoreboard players operation setbit_y qubits = x_idx1 qubits
+function qsim:operators/setbit
+
+#[idx1, idx0] = 1
+scoreboard players operation setbit_x qubits = x_idx1 qubits
+scoreboard players operation setbit_y qubits = x_idx0 qubits
+function qsim:operators/setbit

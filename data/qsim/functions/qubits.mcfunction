@@ -13,12 +13,18 @@ execute store result storage qubits qubits[0] int 1 run scoreboard players get m
 #観測
 function qsim:operators/measure_output
 
-#x_test
-scoreboard players set x_target qubits 1
-function qsim:operators/x
+#0ビット目を1に
+scoreboard players set cx_target qubits 0
+function qsim:operators/x/x
 
-scoreboard players set x_target qubits 3
-function qsim:operators/x
+#観測
+function qsim:operators/measure_output
+
+
+#0ビット目が1なら1ビット目を反転
+scoreboard players set cx_target qubits 1
+scoreboard players set cx_control qubits 0
+function qsim:operators/cx/cx
 
 #観測
 function qsim:operators/measure_output

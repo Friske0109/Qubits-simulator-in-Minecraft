@@ -1,6 +1,3 @@
-#null防止
-scoreboard players add x_upper_loop qubits 0
-
 #lower初期化
 scoreboard players set x_lower_loop qubits 0
 function qsim:operators/x/x_lower_loop
