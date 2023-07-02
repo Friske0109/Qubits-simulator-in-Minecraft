@@ -17,11 +17,11 @@ function qsim:operators/h/h
 scoreboard players set h_target qubits 1
 function qsim:operators/h/h
 
-#足し算回路をつくってみる(2ビット目をcxx01 ,3bit目をcx0,cx1にする)
-scoreboard players set cxx_target qubits 2
-scoreboard players set cxx_control1 qubits 0
-scoreboard players set cxx_control2 qubits 1
-function qsim:operators/cxx/cxx
+#足し算回路をつくってみる(2ビット目をccx01 ,3bit目をcx0,cx1にする)
+scoreboard players set ccx_target qubits 2
+scoreboard players set ccx_control1 qubits 0
+scoreboard players set ccx_control2 qubits 1
+function qsim:operators/ccx/ccx
 
 scoreboard players set cx_target qubits 3
 scoreboard players set cx_control qubits 0
