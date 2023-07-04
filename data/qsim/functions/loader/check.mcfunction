@@ -9,7 +9,6 @@ execute at @e[tag=qubits_loader,type=armor_stand] run execute if block ~ ~1 ~1 o
 execute at @e[tag=qubits_loader,type=armor_stand] run execute if block ~ ~1 ~3 orange_wool run kill @e[tag=qubits_loader,type=armor_stand]
 execute at @e[tag=qubits_loader,type=armor_stand] run execute if block ~ ~1 ~5 orange_wool run kill @e[tag=qubits_loader,type=armor_stand]
 execute at @e[tag=qubits_loader,type=armor_stand] run execute if block ~ ~1 ~7 orange_wool run kill @e[tag=qubits_loader,type=armor_stand]
-execute unless entity @e[tag=qubits_loader,type=armor_stand] run function qsim:operators/measure_output
 
 execute at @e[tag=qubits_loader,type=armor_stand] run execute if block ~ ~1 ~1 lime_wool run scoreboard players set load_3 qubits 1
 execute at @e[tag=qubits_loader,type=armor_stand] run execute if block ~ ~1 ~3 lime_wool run scoreboard players set load_2 qubits 1
