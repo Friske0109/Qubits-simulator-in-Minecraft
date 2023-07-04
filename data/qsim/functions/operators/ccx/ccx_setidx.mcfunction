@@ -13,7 +13,7 @@ scoreboard players operation setbit qubits = max_value qubits
 #ccx_control1_bsの計算
 scoreboard players operation get_control1_bit qubits = ccx_idx0 qubits
 scoreboard players operation get_control1_bit qubits /= ccx_control1_bs qubits
-execute if score get_control1_bit qubits matches 2.. run scoreboard players set get_control1_bit qubits 0
+scoreboard players operation get_control1_bit qubits %= 2 qubits
 
 #ccx_control2_bsの計算
 scoreboard players operation get_control2_bit qubits = ccx_idx0 qubits
