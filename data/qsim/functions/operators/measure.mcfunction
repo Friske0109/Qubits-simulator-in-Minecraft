@@ -66,34 +66,37 @@ scoreboard players operation qubits_i13 qubits *= qubits_i13 qubits
 scoreboard players operation qubits_i14 qubits *= qubits_i14 qubits
 scoreboard players operation qubits_i15 qubits *= qubits_i15 qubits
 
+scoreboard players operation qubits0 qubits += qubits_i0 qubits
+scoreboard players operation qubits1 qubits += qubits_i1 qubits
+scoreboard players operation qubits2 qubits += qubits_i2 qubits
+scoreboard players operation qubits3 qubits += qubits_i3 qubits
+scoreboard players operation qubits4 qubits += qubits_i4 qubits
+scoreboard players operation qubits5 qubits += qubits_i5 qubits
+scoreboard players operation qubits6 qubits += qubits_i6 qubits
+scoreboard players operation qubits7 qubits += qubits_i7 qubits
+scoreboard players operation qubits8 qubits += qubits_i8 qubits
+scoreboard players operation qubits9 qubits += qubits_i9 qubits
+scoreboard players operation qubits10 qubits += qubits_i10 qubits
+scoreboard players operation qubits11 qubits += qubits_i11 qubits
+scoreboard players operation qubits12 qubits += qubits_i12 qubits
+scoreboard players operation qubits13 qubits += qubits_i13 qubits
+scoreboard players operation qubits14 qubits += qubits_i14 qubits
+scoreboard players operation qubits15 qubits += qubits_i15 qubits
+
 scoreboard players operation qubits1 qubits += qubits0 qubits
-scoreboard players operation qubits1 qubits += qubits_i0 qubits
 scoreboard players operation qubits2 qubits += qubits1 qubits
-scoreboard players operation qubits2 qubits += qubits_i1 qubits
 scoreboard players operation qubits3 qubits += qubits2 qubits
-scoreboard players operation qubits3 qubits += qubits_i2 qubits
 scoreboard players operation qubits4 qubits += qubits3 qubits
-scoreboard players operation qubits4 qubits += qubits_i3 qubits
 scoreboard players operation qubits5 qubits += qubits4 qubits
-scoreboard players operation qubits5 qubits += qubits_i4 qubits
 scoreboard players operation qubits6 qubits += qubits5 qubits
-scoreboard players operation qubits6 qubits += qubits_i5 qubits
 scoreboard players operation qubits7 qubits += qubits6 qubits
-scoreboard players operation qubits7 qubits += qubits_i6 qubits
 scoreboard players operation qubits8 qubits += qubits7 qubits
-scoreboard players operation qubits8 qubits += qubits_i7 qubits
 scoreboard players operation qubits9 qubits += qubits8 qubits
-scoreboard players operation qubits9 qubits += qubits_i8 qubits
 scoreboard players operation qubits10 qubits += qubits9 qubits
-scoreboard players operation qubits10 qubits += qubits_i9 qubits
 scoreboard players operation qubits11 qubits += qubits10 qubits
-scoreboard players operation qubits11 qubits += qubits_i10 qubits
 scoreboard players operation qubits12 qubits += qubits11 qubits
-scoreboard players operation qubits12 qubits += qubits_i11 qubits
 scoreboard players operation qubits13 qubits += qubits12 qubits
-scoreboard players operation qubits13 qubits += qubits_i12 qubits
 scoreboard players operation qubits14 qubits += qubits13 qubits
-scoreboard players operation qubits14 qubits += qubits_i13 qubits
 
 summon area_effect_cloud 0 0 0 {Tags:[measure_choise]}
 execute store result score measure_random qubits run data get entity @e[tag=measure_choise,type=area_effect_cloud,limit=1] UUID[0]
